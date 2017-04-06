@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+            <title>
+                Cube Summation
+            </title>
+            <link href="./bootstrap-3.3.7-dist/css/bootstrap.css" rel="stylesheet">
+            </link>
+            <link href="./index.css" rel="stylesheet">
+            </link>
+        </meta>
+    </head>
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>
+                    Cube Summation
+                    <small>
+                        Carlos Mauricio Duque
+                    </small>
+                </h1>
+            </div>
+            <div class="jumbotron">
+                <div class="six columns">
+                    <h3>
+                        Ingresa el input:
+                    </h3>
+                    <textarea class="form-control" rows="20" cols="40" id="input" name="input" >
+                    </textarea>
+                    <br>
+                    </br>
+                </div>
+                <p>
+                    <button class="btn btn-primary" onclick="correr(document.querySelector('#input').value)">
+                        Correr
+                    </button>
+                    <div class="alert alert-danger fade" id="alertError" role="alert">
+                        <p id="error" name="error">
+                        </p>
+                    </div>
+                </p>
+                <div class="row">
+                    <div class="six columns">
+                        <h3>
+                            Output:
+                        </h3>
+                        <p id="output" name="output">
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="jquery-3.2.0.min.js">
+        </script>
+        <script src="CubeSummation.js">
+        </script>
+        <script src="index.js">
+        </script>
+    </body>
+</html>
